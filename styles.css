@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button.danger {
+    background-color: red;
+}
+
+#listaLibros {
+    margin-top: 10px;
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+}
+
+.libro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px 0;
+    background: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+.libro:hover {
+    transform: scale(1.02);
+}
+
+.leido {
+    background-color: #d4edda;
+}

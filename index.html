@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Personal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>📚 Biblioteca Personal</h2>
+
+    <div class="input-container">
+        <input type="text" id="titulo" placeholder="Título del libro">
+        <input type="text" id="autor" placeholder="Autor">
+        <button onclick="agregarLibro()">➕ Agregar Libro</button>
+    </div>
+
+    <input type="text" id="buscar" placeholder="🔍 Buscar por título o autor" onkeyup="filtrarLibros()">
+
+    <h3>Lista de Libros <span id="contador"></span></h3>
+    
+    <div id="listaLibros"></div>
+
+    <button onclick="limpiarLista()" class="danger">🗑 Eliminar todos los libros</button>
+    <button onclick="exportarLibros()">📂 Exportar JSON</button>
+    <input type="file" id="importarArchivo" accept=".json" onchange="importarLibros()">
+
+    <script src="script.js"></script>
+</body>
+</html>
